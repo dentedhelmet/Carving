@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1920">
+  <title>Carve a Ski Tiki — The Lodge Workshop</title>
+  <script src="assets/gsap.min.js"></script>
+  <style>
+    @font-face{font-family:'Bree Serif';font-weight:400;src:url('assets/fonts/BreeSerif-Regular.ttf') format('truetype')}
+    @font-face{font-family:'IBM Plex Mono';font-weight:400;src:url('assets/fonts/IBMPlexMono-Regular.ttf') format('truetype')}
+    @font-face{font-family:'IBM Plex Mono';font-weight:600;src:url('assets/fonts/IBMPlexMono-SemiBold.ttf') format('truetype')}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{width:1080px;height:1920px;overflow:hidden;background:#F4EBDD}
+    #root{position:relative;width:1080px;height:1920px;color:#38271E;font-family:'IBM Plex Mono',monospace;overflow:hidden}
+    .scene{position:absolute;inset:0;width:1080px;height:1920px;background:#F4EBDD;opacity:0}
+    .scene.first{opacity:1}
+    .scene-content{width:100%;height:100%;padding:42px 52px 42px;display:flex;flex-direction:column;gap:18px;box-sizing:border-box}
+    .masthead{display:flex;justify-content:space-between;align-items:center;flex:0 0 44px;font-size:28px;font-weight:600;letter-spacing:.06em;color:#345447;border-bottom:2px solid #D9C3A4;padding-bottom:10px}
+    .edition{color:#A84623;letter-spacing:.08em}
+    .heading{height:182px;flex:0 0 182px;display:flex;flex-direction:column;gap:8px;justify-content:center}
+    .eyebrow{color:#A84623;font-size:28px;font-weight:600;letter-spacing:.1em}
+    h1{font-family:'Bree Serif',serif;font-size:84px;font-weight:400;line-height:1.02;letter-spacing:-.025em;max-width:970px}
+    #scene-intro h1{font-size:100px}
+    #scene-reveal h1{font-size:104px}
+    .stage{position:relative;flex:1 1 auto;min-height:0;width:100%;overflow:hidden;background:#D9C3A4;border:2px solid #38271E;border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .media{display:block;width:100%;height:100%;object-fit:contain;position:absolute;inset:0}
+    .matte-note{position:absolute;top:50%;font-size:17px;font-weight:600;letter-spacing:.16em;color:#38271E;z-index:3;writing-mode:vertical-rl;transform:translateY(-50%)}
+    .matte-note.left{left:18px;transform:translateY(-50%) rotate(180deg)}
+    .matte-note.right{right:18px}
+    .note{flex:0 0 76px;display:flex;align-items:center;justify-content:center;text-align:center;color:#345447;font-size:28px;line-height:1.3;font-weight:600;max-width:976px}
+    .caption-space{flex:0 0 150px}
+    footer{height:36px;flex:0 0 36px;display:flex;align-items:center;justify-content:space-between;font-size:28px;letter-spacing:.03em;font-weight:600;color:#A84623}
+    .caption{position:absolute;left:62px;right:62px;bottom:94px;height:150px;z-index:30;display:flex;align-items:center;justify-content:center;text-align:center;border-top:2px solid #D9C3A4;padding:15px 18px 4px;color:#38271E;background:#F4EBDD}
+    .caption p{font-size:36px;line-height:1.28;font-weight:400;max-width:920px}
+    #progress{position:absolute;left:0;bottom:0;width:1080px;height:8px;background:#A84623;z-index:40}
+  </style>
+</head>
+<body>
+  <div id="root" data-composition-id="ski-tiki" data-start="0" data-duration="84" data-width="1080" data-height="1920" data-fps="30">
+    <section id="scene-intro" class="scene first" style="z-index:1" aria-label="Carve a Ski Tiki">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">FIELD GUIDE</p><h1>Carve a Ski Tiki</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <img id="media-intro" class="clip media" data-start="0.000000" data-duration="10.023407" data-track-index="0" src="assets/intro.jpg" alt="Carve a Ski Tiki">
+          <div class="matte-note right" data-layout-ignore>THE SHORT VERSION</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>From log to lodge legend.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>01 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-sketch" class="scene " style="z-index:2" aria-label="Sketch the personality">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">01 / PLAN</p><h1>Sketch the personality</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <img id="media-sketch" class="clip media" data-start="9.623407" data-duration="9.660741" data-track-index="1" src="assets/sketch.jpg" alt="Sketch the personality">
+          <div class="matte-note right" data-layout-ignore>STEP 01 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>Secure the log. Think big shapes.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>02 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-rough" class="scene " style="z-index:3" aria-label="Find the silhouette">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">02 / ROUGH OUT</p><h1>Find the silhouette</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <video id="media-rough" class="clip media" data-start="18.884148" data-duration="9.788741" data-track-index="0" src="assets/rough.mp4" muted playsinline preload="auto"></video>
+          <div class="matte-note right" data-layout-ignore>STEP 02 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>Chainsaw PPE • eye + ear protection</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>03 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-grin" class="scene " style="z-index:4" aria-label="Make that grin">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">03 / CARVE</p><h1>Make that grin</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <video id="media-grin" class="clip media" data-start="28.272889" data-duration="9.383407" data-track-index="1" src="assets/grin.mp4" muted playsinline preload="auto"></video>
+          <div class="matte-note right" data-layout-ignore>STEP 03 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>Big features first. Details next.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>04 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-owl" class="scene " style="z-index:5" aria-label="Give it character">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">04 / REFINE</p><h1>Give it character</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <video id="media-owl" class="clip media" data-start="37.256296" data-duration="8.828741" data-track-index="0" src="assets/owl.mp4" muted playsinline preload="auto"></video>
+          <div class="matte-note right" data-layout-ignore>STEP 04 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>An owl up top. Texture below.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>05 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-char" class="scene " style="z-index:6" aria-label="Bring out the grain">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">05 / TEXTURE</p><h1>Bring out the grain</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <video id="media-char" class="clip media" data-start="45.685037" data-duration="10.514074" data-track-index="1" src="assets/char.mp4" muted playsinline preload="auto"></video>
+          <div class="matte-note right" data-layout-ignore>STEP 05 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>Before coatings • keep fire protection nearby</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>06 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-shade" class="scene " style="z-index:7" aria-label="Make the details pop">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">06 / CONTRAST</p><h1>Make the details pop</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <video id="media-shade" class="clip media" data-start="55.799111" data-duration="9.276741" data-track-index="0" src="assets/shade.mp4" muted playsinline preload="auto"></video>
+          <div class="matte-note right" data-layout-ignore>STEP 06 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>Let it cool. Brush off loose char.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>07 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-color" class="scene " style="z-index:8" aria-label="Add ski-day color">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">07 / PAINT</p><h1>Add ski-day color</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <video id="media-color" class="clip media" data-start="64.675852" data-duration="10.271407" data-track-index="1" src="assets/color.mp4" muted playsinline preload="auto"></video>
+          <div class="matte-note right" data-layout-ignore>STEP 07 OF 07</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>White teeth. Red-to-gold goggles.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>08 / 09</span></footer>
+      </div>
+    </section>
+<section id="scene-reveal" class="scene " style="z-index:9" aria-label="Lodge legend.">
+      <div class="scene-content">
+        <div class="masthead" data-layout-allow-overlap><span>THE LODGE WORKSHOP</span><span class="edition">SKI / TIKI</span></div>
+        <header class="heading" data-layout-allow-overlap><p class="eyebrow">READY FOR APRÈS</p><h1>Lodge legend.</h1></header>
+        <div class="stage" data-layout-allow-overflow>
+          <div class="matte-note left" data-layout-ignore>CARVED WITH CHARACTER</div>
+          <img id="media-reveal" class="clip media" data-start="74.547259" data-duration="9.452741" data-track-index="0" src="assets/reveal.jpg" alt="Lodge legend.">
+          <div class="matte-note right" data-layout-ignore>MADE BY HAND</div>
+        </div>
+        <p class="note" data-layout-allow-overlap>For outdoor display: choose a compatible exterior finish.</p>
+        <div class="caption-space" aria-hidden="true"></div>
+        <footer data-layout-allow-overlap><span>ONE LOG. A LOT OF ATTITUDE.</span><span>09 / 09</span></footer>
+      </div>
+    </section>
+    <div id="caption-0" class="clip caption" data-start="0.450000" data-duration="4.029333" data-track-index="8"><p>A plain log. A big grin. And one very cool ski tiki.</p></div>
+<div id="caption-1" class="clip caption" data-start="4.559333" data-duration="3.643334" data-track-index="8"><p>Here&#x27;s the process, from sketch to lodge legend.</p></div>
+<div id="caption-2" class="clip caption" data-start="10.073407" data-duration="2.642667" data-track-index="8"><p>Start with a stable, securely clamped log.</p></div>
+<div id="caption-3" class="clip caption" data-start="12.796074" data-duration="4.667333" data-track-index="8"><p>Sketch oversized goggles, a broad grin, and an owl on top.</p></div>
+<div id="caption-4" class="clip caption" data-start="19.334148" data-duration="2.280000" data-track-index="8"><p>Suit up with proper chainsaw protection.</p></div>
+<div id="caption-5" class="clip caption" data-start="21.694148" data-duration="5.158000" data-track-index="8"><p>Rough out the silhouette in stages, leaving extra wood around the details.</p></div>
+<div id="caption-6" class="clip caption" data-start="28.722889" data-duration="2.066667" data-track-index="8"><p>Define the nose, mouth, and teeth.</p></div>
+<div id="caption-7" class="clip caption" data-start="30.869556" data-duration="4.966000" data-track-index="8"><p>Work gradually: deep shadows make that grin read from across the room.</p></div>
+<div id="caption-8" class="clip caption" data-start="37.706296" data-duration="2.216000" data-track-index="8"><p>Shape the owl and add feather lines.</p></div>
+<div id="caption-9" class="clip caption" data-start="40.002296" data-duration="4.262000" data-track-index="8"><p>Refine the body pattern, checking the whole carving as you go.</p></div>
+<div id="caption-10" class="clip caption" data-start="46.135037" data-duration="4.029333" data-track-index="8"><p>Before any paint or finish, a light scorch brings out texture.</p></div>
+<div id="caption-11" class="clip caption" data-start="50.244370" data-duration="4.134000" data-track-index="8"><p>Work clear of combustibles, with fire protection nearby.</p></div>
+<div id="caption-12" class="clip caption" data-start="56.249111" data-duration="2.920000" data-track-index="8"><p>Let the wood cool, then brush away loose char.</p></div>
+<div id="caption-13" class="clip caption" data-start="59.249111" data-duration="4.006000" data-track-index="8"><p>Darken the recesses and wipe back the raised surfaces.</p></div>
+<div id="caption-14" class="clip caption" data-start="65.125852" data-duration="1.789333" data-track-index="8"><p>Paint the teeth bright white.</p></div>
+<div id="caption-15" class="clip caption" data-start="66.995185" data-duration="3.432000" data-track-index="8"><p>Then give those goggles a fiery red-to-gold fade.</p></div>
+<div id="caption-16" class="clip caption" data-start="70.507185" data-duration="2.619334" data-track-index="8"><p>Now it&#x27;s looking ready for the slopes.</p></div>
+<div id="caption-17" class="clip caption" data-start="74.997259" data-duration="3.218667" data-track-index="8"><p>Choose a protective finish suited to where it&#x27;ll live.</p></div>
+<div id="caption-18" class="clip caption" data-start="78.295926" data-duration="4.283333" data-track-index="8"><p>One log. One owl. Maximum après-ski attitude.</p></div>
+    <div id="progress" data-layout-ignore></div>
+    <audio id="narration" data-start="0" data-duration="84" data-track-index="12" src="assets/narration.m4a" data-volume="1"></audio>
+  </div>
+  <script>const SCENES = [{"id": "intro", "number": "FIELD GUIDE", "title": "Carve a Ski Tiki", "note": "From log to lodge legend.", "photo": "IMG_0056.jpeg", "lines": ["A plain log. A big grin. And one very cool ski tiki.", "Here's the process, from sketch to lodge legend."], "start": 0.0, "duration": 9.623407, "visual_duration": 10.023407, "media": "assets/intro.jpg"}, {"id": "sketch", "number": "01 / PLAN", "title": "Sketch the personality", "note": "Secure the log. Think big shapes.", "photo": "owlhead_1.jpg", "lines": ["Start with a stable, securely clamped log.", "Sketch oversized goggles, a broad grin, and an owl on top."], "start": 9.623407, "duration": 9.260741, "visual_duration": 9.660741, "media": "assets/sketch.jpg"}, {"id": "rough", "number": "02 / ROUGH OUT", "title": "Find the silhouette", "note": "Chainsaw PPE \u2022 eye + ear protection", "video": "IMG_9983.MOV", "offset": 78, "source_duration": 13, "lines": ["Suit up with proper chainsaw protection.", "Rough out the silhouette in stages, leaving extra wood around the details."], "start": 18.884148, "duration": 9.388741, "visual_duration": 9.788741, "media": "assets/rough.mp4"}, {"id": "grin", "number": "03 / CARVE", "title": "Make that grin", "note": "Big features first. Details next.", "video": "IMG_9991.MOV", "offset": 72, "source_duration": 15, "lines": ["Define the nose, mouth, and teeth.", "Work gradually: deep shadows make that grin read from across the room."], "start": 28.272889, "duration": 8.983407, "visual_duration": 9.383407, "media": "assets/grin.mp4"}, {"id": "owl", "number": "04 / REFINE", "title": "Give it character", "note": "An owl up top. Texture below.", "video": "IMG_9992.MOV", "offset": 43, "source_duration": 10, "lines": ["Shape the owl and add feather lines.", "Refine the body pattern, checking the whole carving as you go."], "start": 37.256296, "duration": 8.428741, "visual_duration": 8.828741, "media": "assets/owl.mp4"}, {"id": "char", "number": "05 / TEXTURE", "title": "Bring out the grain", "note": "Before coatings \u2022 keep fire protection nearby", "video": "burning_video.mov", "offset": 83, "source_duration": 12, "lines": ["Before any paint or finish, a light scorch brings out texture.", "Work clear of combustibles, with fire protection nearby."], "start": 45.685037, "duration": 10.114074, "visual_duration": 10.514074, "media": "assets/char.mp4"}, {"id": "shade", "number": "06 / CONTRAST", "title": "Make the details pop", "note": "Let it cool. Brush off loose char.", "video": "IMG_0012.MOV", "offset": 21, "source_duration": 18, "lines": ["Let the wood cool, then brush away loose char.", "Darken the recesses and wipe back the raised surfaces."], "start": 55.799111, "duration": 8.876741, "visual_duration": 9.276741000000001, "media": "assets/shade.mp4"}, {"id": "color", "number": "07 / PAINT", "title": "Add ski-day color", "note": "White teeth. Red-to-gold goggles.", "video": "IMG_0050.MOV", "offset": 0, "source_duration": 31.5, "lines": ["Paint the teeth bright white.", "Then give those goggles a fiery red-to-gold fade.", "Now it's looking ready for the slopes."], "start": 64.675852, "duration": 9.871407, "visual_duration": 10.271407, "media": "assets/color.mp4"}, {"id": "reveal", "number": "READY FOR APR\u00c8S", "title": "Lodge legend.", "note": "For outdoor display: choose a compatible exterior finish.", "photo": "IMG_0054.jpeg", "lines": ["Choose a protective finish suited to where it'll live.", "One log. One owl. Maximum apr\u00e8s-ski attitude."], "start": 74.547259, "duration": 9.452741, "visual_duration": 9.452741, "media": "assets/reveal.jpg"}];
+const CAPTIONS = [{"text": "A plain log. A big grin. And one very cool ski tiki.", "start": 0.45, "end": 4.479333}, {"text": "Here's the process, from sketch to lodge legend.", "start": 4.559333, "end": 8.202667}, {"text": "Start with a stable, securely clamped log.", "start": 10.073407, "end": 12.716074}, {"text": "Sketch oversized goggles, a broad grin, and an owl on top.", "start": 12.796074, "end": 17.463407}, {"text": "Suit up with proper chainsaw protection.", "start": 19.334148, "end": 21.614148}, {"text": "Rough out the silhouette in stages, leaving extra wood around the details.", "start": 21.694148, "end": 26.852148}, {"text": "Define the nose, mouth, and teeth.", "start": 28.722889, "end": 30.789556}, {"text": "Work gradually: deep shadows make that grin read from across the room.", "start": 30.869556, "end": 35.835556}, {"text": "Shape the owl and add feather lines.", "start": 37.706296, "end": 39.922296}, {"text": "Refine the body pattern, checking the whole carving as you go.", "start": 40.002296, "end": 44.264296}, {"text": "Before any paint or finish, a light scorch brings out texture.", "start": 46.135037, "end": 50.16437}, {"text": "Work clear of combustibles, with fire protection nearby.", "start": 50.24437, "end": 54.37837}, {"text": "Let the wood cool, then brush away loose char.", "start": 56.249111, "end": 59.169111}, {"text": "Darken the recesses and wipe back the raised surfaces.", "start": 59.249111, "end": 63.255111}, {"text": "Paint the teeth bright white.", "start": 65.125852, "end": 66.915185}, {"text": "Then give those goggles a fiery red-to-gold fade.", "start": 66.995185, "end": 70.427185}, {"text": "Now it's looking ready for the slopes.", "start": 70.507185, "end": 73.126519}, {"text": "Choose a protective finish suited to where it'll live.", "start": 74.997259, "end": 78.215926}, {"text": "One log. One owl. Maximum apr\u00e8s-ski attitude.", "start": 78.295926, "end": 82.579259}];
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({paused:true});
+SCENES.forEach((s,i) => {
+  const id = '#scene-' + s.id;
+  const t=s.start;
+  // The crossfade is the scene handoff; there are no earlier exit tweens.
+  if(i>0) {
+    tl.to('#scene-'+SCENES[i-1].id,{opacity:0,duration:.4,ease:'sine.inOut'},t);
+    tl.fromTo(id,{opacity:0},{opacity:1,duration:.4,ease:'sine.inOut'},t);
+  }
+  tl.from(id+' .masthead',{y:-8,opacity:0,duration:.42,ease:'power2.out'},t+.12);
+  tl.from(id+' .eyebrow',{x:-20,opacity:0,duration:.45,ease:'power3.out'},t+.18);
+  tl.from(id+' h1',{y:22,opacity:0,duration:.62,ease:'back.out(1.08)'},t+.24);
+  tl.from(id+' .stage',{y:12,opacity:i===0?1:0,duration:.48,ease:'sine.out'},t+.1);
+  tl.from(id+' .note',{x:16,opacity:0,duration:.5,ease:'power2.out'},t+.3);
+  tl.from(id+' footer',{opacity:0,duration:.45,ease:'sine.out'},t+.4);
+  if(s.photo) {
+    // A slow push on a still keeps the opening and final reveal alive.
+    tl.fromTo('#media-'+s.id,{scale:1},{scale:1.045,duration:s.visual_duration,ease:'none'},t);
+  }
+});
+CAPTIONS.forEach((c,i)=>{
+  tl.from('#caption-'+i,{y:8,opacity:0,duration:.2,ease:'power2.out'},c.start);
+  tl.set('#caption-'+i,{opacity:0},c.end);
+});
+tl.from('#progress',{scaleX:0,duration:84,ease:'none',transformOrigin:'left center'},0);
+// Only the final scene fades out, leaving a clean cream end frame.
+tl.to('#scene-reveal',{opacity:0,duration:.6,ease:'sine.inOut'},83.4);
+window.__timelines['ski-tiki']=tl;
+tl.seek(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+{
+  "duration": 84.0,
+  "scenes": [
+    {
+      "id": "intro",
+      "number": "FIELD GUIDE",
+      "title": "Carve a Ski Tiki",
+      "note": "From log to lodge legend.",
+      "photo": "IMG_0056.jpeg",
+      "lines": [
+        "A plain log. A big grin. And one very cool ski tiki.",
+        "Here's the process, from sketch to lodge legend."
+      ],
+      "start": 0.0,
+      "duration": 9.623407,
+      "visual_duration": 10.023407,
+      "media": "assets/intro.jpg"
+    },
+    {
+      "id": "sketch",
+      "number": "01 / PLAN",
+      "title": "Sketch the personality",
+      "note": "Secure the log. Think big shapes.",
+      "photo": "owlhead_1.jpg",
+      "lines": [
+        "Start with a stable, securely clamped log.",
+        "Sketch oversized goggles, a broad grin, and an owl on top."
+      ],
+      "start": 9.623407,
+      "duration": 9.260741,
+      "visual_duration": 9.660741,
+      "media": "assets/sketch.jpg"
+    },
+    {
+      "id": "rough",
+      "number": "02 / ROUGH OUT",
+      "title": "Find the silhouette",
+      "note": "Chainsaw PPE \u2022 eye + ear protection",
+      "video": "IMG_9983.MOV",
+      "offset": 78,
+      "source_duration": 13,
+      "lines": [
+        "Suit up with proper chainsaw protection.",
+        "Rough out the silhouette in stages, leaving extra wood around the details."
+      ],
+      "start": 18.884148,
+      "duration": 9.388741,
+      "visual_duration": 9.788741,
+      "media": "assets/rough.mp4"
+    },
+    {
+      "id": "grin",
+      "number": "03 / CARVE",
+      "title": "Make that grin",
+      "note": "Big features first. Details next.",
+      "video": "IMG_9991.MOV",
+      "offset": 72,
+      "source_duration": 15,
+      "lines": [
+        "Define the nose, mouth, and teeth.",
+        "Work gradually: deep shadows make that grin read from across the room."
+      ],
+      "start": 28.272889,
+      "duration": 8.983407,
+      "visual_duration": 9.383407,
+      "media": "assets/grin.mp4"
+    },
+    {
+      "id": "owl",
+      "number": "04 / REFINE",
+      "title": "Give it character",
+      "note": "An owl up top. Texture below.",
+      "video": "IMG_9992.MOV",
+      "offset": 43,
+      "source_duration": 10,
+      "lines": [
+        "Shape the owl and add feather lines.",
+        "Refine the body pattern, checking the whole carving as you go."
+      ],
+      "start": 37.256296,
+      "duration": 8.428741,
+      "visual_duration": 8.828741,
+      "media": "assets/owl.mp4"
+    },
+    {
+      "id": "char",
+      "number": "05 / TEXTURE",
+      "title": "Bring out the grain",
+      "note": "Before coatings \u2022 keep fire protection nearby",
+      "video": "burning_video.mov",
+      "offset": 83,
+      "source_duration": 12,
+      "lines": [
+        "Before any paint or finish, a light scorch brings out texture.",
+        "Work clear of combustibles, with fire protection nearby."
+      ],
+      "start": 45.685037,
+      "duration": 10.114074,
+      "visual_duration": 10.514074,
+      "media": "assets/char.mp4"
+    },
+    {
+      "id": "shade",
+      "number": "06 / CONTRAST",
+      "title": "Make the details pop",
+      "note": "Let it cool. Brush off loose char.",
+      "video": "IMG_0012.MOV",
+      "offset": 21,
+      "source_duration": 18,
+      "lines": [
+        "Let the wood cool, then brush away loose char.",
+        "Darken the recesses and wipe back the raised surfaces."
+      ],
+      "start": 55.799111,
+      "duration": 8.876741,
+      "visual_duration": 9.276741000000001,
+      "media": "assets/shade.mp4"
+    },
+    {
+      "id": "color",
+      "number": "07 / PAINT",
+      "title": "Add ski-day color",
+      "note": "White teeth. Red-to-gold goggles.",
+      "video": "IMG_0050.MOV",
+      "offset": 0,
+      "source_duration": 31.5,
+      "lines": [
+        "Paint the teeth bright white.",
+        "Then give those goggles a fiery red-to-gold fade.",
+        "Now it's looking ready for the slopes."
+      ],
+      "start": 64.675852,
+      "duration": 9.871407,
+      "visual_duration": 10.271407,
+      "media": "assets/color.mp4"
+    },
+    {
+      "id": "reveal",
+      "number": "READY FOR APR\u00c8S",
+      "title": "Lodge legend.",
+      "note": "For outdoor display: choose a compatible exterior finish.",
+      "photo": "IMG_0054.jpeg",
+      "lines": [
+        "Choose a protective finish suited to where it'll live.",
+        "One log. One owl. Maximum apr\u00e8s-ski attitude."
+      ],
+      "start": 74.547259,
+      "duration": 9.452741,
+      "visual_duration": 9.452741,
+      "media": "assets/reveal.jpg"
+    }
+  ],
+  "captions": [
+    {
+      "text": "A plain log. A big grin. And one very cool ski tiki.",
+      "start": 0.45,
+      "end": 4.479333
+    },
+    {
+      "text": "Here's the process, from sketch to lodge legend.",
+      "start": 4.559333,
+      "end": 8.202667
+    },
+    {
+      "text": "Start with a stable, securely clamped log.",
+      "start": 10.073407,
+      "end": 12.716074
+    },
+    {
+      "text": "Sketch oversized goggles, a broad grin, and an owl on top.",
+      "start": 12.796074,
+      "end": 17.463407
+    },
+    {
+      "text": "Suit up with proper chainsaw protection.",
+      "start": 19.334148,
+      "end": 21.614148
+    },
+    {
+      "text": "Rough out the silhouette in stages, leaving extra wood around the details.",
+      "start": 21.694148,
+      "end": 26.852148
+    },
+    {
+      "text": "Define the nose, mouth, and teeth.",
+      "start": 28.722889,
+      "end": 30.789556
+    },
+    {
+      "text": "Work gradually: deep shadows make that grin read from across the room.",
+      "start": 30.869556,
+      "end": 35.835556
+    },
+    {
+      "text": "Shape the owl and add feather lines.",
+      "start": 37.706296,
+      "end": 39.922296
+    },
+    {
+      "text": "Refine the body pattern, checking the whole carving as you go.",
+      "start": 40.002296,
+      "end": 44.264296
+    },
+    {
+      "text": "Before any paint or finish, a light scorch brings out texture.",
+      "start": 46.135037,
+      "end": 50.16437
+    },
+    {
+      "text": "Work clear of combustibles, with fire protection nearby.",
+      "start": 50.24437,
+      "end": 54.37837
+    },
+    {
+      "text": "Let the wood cool, then brush away loose char.",
+      "start": 56.249111,
+      "end": 59.169111
+    },
+    {
+      "text": "Darken the recesses and wipe back the raised surfaces.",
+      "start": 59.249111,
+      "end": 63.255111
+    },
+    {
+      "text": "Paint the teeth bright white.",
+      "start": 65.125852,
+      "end": 66.915185
+    },
+    {
+      "text": "Then give those goggles a fiery red-to-gold fade.",
+      "start": 66.995185,
+      "end": 70.427185
+    },
+    {
+      "text": "Now it's looking ready for the slopes.",
+      "start": 70.507185,
+      "end": 73.126519
+    },
+    {
+      "text": "Choose a protective finish suited to where it'll live.",
+      "start": 74.997259,
+      "end": 78.215926
+    },
+    {
+      "text": "One log. One owl. Maximum apr\u00e8s-ski attitude.",
+      "start": 78.295926,
+      "end": 82.579259
+    }
+  ]
+}
